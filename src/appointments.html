@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title> Book an Appointment </title>
+
+<link rel = "stylesheet" href = "appointments.css">
+<script src = "js/script.js"></script>
+<script src = "iwt.js"></script>
+<noscript> Sorry, your browser does not support Javascript! </noscript>
+
+</head>
+
+<body>
+
+<header style = " background-color : #f0e68c" >
+
+<div class = "logo">
+<a href = "#"><img src = "images/logo.png" style = "width : 130px ; height : 130px"> </a>
+</div>
+
+<ul class = "menu">
+ <a href="#" ><li class = "menu1">  Home </li> </a>
+ <a href="#"><li class = "menu1">  About us </li> </a>
+ <a href="#"><li class = "menu1"> Services </li></a>
+ <a href="#"><li class = "menu1">  Blog </li> </a>
+ <a href="#"><li class = "menu1">  Book an Appointment </li> </a>
+ <a href="#"><li class = "menu1"> Contact us </li></a>
+ <a href="accountpg.html"><img src = "images/user.png" style = "width : 50px ; height : 50px ; float : right"></a>
+ </ul>
+ <br>
+
+ 
+</header>
+
+<div class = "heading">
+<h1> Book an appointment </h1>
+<div>
+
+<div class = "form" align = "center">
+<form method = "POST" action = "appointments.php">
+<fieldset>
+
+<div class = "center">
+<label for = "fname"> Name </label><br>
+<input type = "text" id = "fname" name = "fname" required> 
+</div>
+
+
+<div class = "clear"> &nbsp; </div> 
+
+<div class = "clear"> &nbsp; </div>
+ 
+<div class = "center">
+<label for = "service"> Choose service type: </label><br>
+<select name="service" id="service" required>
+	<option value="Dressing">Dressing</option>
+	<option value="Pre-bridal">Pre-Bridal Services</option>
+	<option value="Waxing">Waxing</option>
+	<option value="Massage">Massage</option>
+	<option value="Color">Hair Coloring</option>
+	<option value="cut">Hair Cutting</option>
+	<option value="style">Hair Styling</option>
+	<option value="keratin">Keratin Treatment</option>
+	<option value="Mani">Manicure</option>
+	<option value="NE">Nail Extension/option>
+	<option value="Pedi">Pedicure</option>
+	<option value="Ncolor">Nail Color</option>
+</select>	
+</div>
+
+<div class = "clear"> &nbsp; </div>
+
+<div class = "clear"> &nbsp; </div>
+
+<div class = "center">
+<label for="appt-time">Choose an appointment time: <br></label>
+<input type="time" id="appt_time" name="appt_time"
+       min="09:00" max="18:00" required>
+<br><small>Working hours are 9am to 6pm</small>	   
+</div>
+<div class = "clear"> &nbsp; </div>
+
+<div class = "clear"> &nbsp; </div>
+<div class = "center">
+<label for = "date"> Chose date </label><br>
+<input type = "date" name = "date"> </input><br>
+
+
+<div class = "clear"> &nbsp; </div> 
+
+<div class = "clear"> &nbsp; </div>
+
+<input type = "checkbox"> I want to recieve updates by mail <br>
+
+
+<div class = "clear"> &nbsp; </div>
+
+<div class = "clear"> &nbsp; </div>
+
+<a href = "#"><input type = "submit" value = "Submit" onclick = "confirmSubmit()"> 
+
+
+</fieldset>
+
+</form>
+</div>
+
+<div id = "message">
+<h3> Password must contain at least one simple letter, at least one capital letter and a number, the minimum length is 6 characters </h3>
+</div>
+<br><br>
+</body>
+
+<footer>
+Email : <a href = "#" padding = "10px" >salonallure@gmail.com</a> | Address : 12/12/king st, sl  | Phone : 066-123456789  <br><br>
+Find us on : <br><br>
+<a href = "#"><img class = "footerImg" src = "images/fb.png"></a>
+<a href = "#"><img class = "footerImg" src = "images/twitter.png"></a>
+<a href = "#"><img class = "footerImg" src = "images/ig.png"></a>
+<a href = "#"><img class = "footerImg" src = "images/googp.png"></a><br><br>
+<a href = "#"> Privacy Policy </a><br>
+<a href = "employee_log.html">Employee Log in</a>
+</footer>
+
+</html>
